@@ -17,12 +17,12 @@ public class OrderItemsController : Controller
     }
 
     // GET: OrderItems?orderId=5
-    public async Task<IActionResult> Index(int orderId)
-    {
-        var orderItems = await _orderItemService.GetOrderItemsByOrderIdAsync(orderId);
-        ViewBag.OrderId = orderId;
-        return View(orderItems);
-    }
+    //public async Task<IActionResult> Index(int orderId)
+    //{
+    //    var orderItems = await _orderItemService.GetOrderItemsByOrderIdAsync(orderId);
+    //    ViewBag.OrderId = orderId;
+    //    return View(orderItems);
+    //}
 
     // GET: OrderItems/Create?orderId=5
     public IActionResult Create(int orderId)
